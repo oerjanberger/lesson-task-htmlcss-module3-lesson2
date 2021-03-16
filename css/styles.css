@@ -17,6 +17,10 @@ h2,
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav {
+  margin-left: 25px;
+}
+
 nav ul {
   padding: 0px;
 }
@@ -29,6 +33,11 @@ header,
 footer {
   background-color: #202020;
   color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
 }
 
 /* Links */
@@ -61,6 +70,7 @@ header a {
 
 .reviews {
   background-color: #e8e8e8;
+  padding: 100px;
 }
 
 .featured__products {
@@ -93,12 +103,54 @@ footer {
   left: 100px;
 }
 
+.selling-points {
+  margin: 50px auto;
+}
+
+.reviews__content,
+.selling-points {
+  max-width: 1000px;
+  display: flex;
+}
+
+.selling-points > *, 
+.reviews__content > * {
+  flex: 1;
+}
+
 .selling-points__images {
   border-radius: 100px;
+  width: 100%;
+}
+
+.reviews {
+  text-align: center;
+  padding: 50px auto;
+}
+
+.reviews__content {
+  text-align: left;
+  margin: auto;
+}
+.reviews__content div {
+  margin: 50px;
 }
 
 .review__images {
+  width: 80px;
   border-radius: 50%;
+  float: right;
+}
+
+.reviews__name {
+  display: block;
+}
+
+/* Guitars page */
+main {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* Contact page */
@@ -107,4 +159,36 @@ select,
 textarea {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+}
+
+.contact {
+  display: flex;
+}
+
+
+/* Product Specific Page */
+.product-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image__thumbnails {
+  display: flex;
+}
+
+.product-image__thumbnails img {
+  width: 100%;
+}
+
+.product-image__scroll {
+  margin: 10px;
 }
